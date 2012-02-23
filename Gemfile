@@ -2,7 +2,7 @@ source :rubygems
 
 gemspec
 
-gem "httparty"
+gem "rest-client"
 
 group :development,:test do
   gem "rdoc", "~> 3.12"

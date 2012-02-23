@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     yp-api (0.0.1)
+      httparty
 
 GEM
   remote: http://rubygems.org/
