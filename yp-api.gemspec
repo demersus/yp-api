@@ -18,4 +18,5 @@ Gem::Specification.new do |s|
   s.rubyforge_project = '[none]'
   
   s.add_dependency "httparty"
+  s.add_dependency "rest-client"
 end
