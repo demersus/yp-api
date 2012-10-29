@@ -11,7 +11,7 @@ class YpApi::Listing
                 :mobile_phone, :more_info_url, :neighborhoods, :omit_address, :omit_phone, :open_hours,
                 :payment_methods, :phone, :primary_category, :print_ad_image, :print_ad_image_click,
                 :rating_count, :services, :slogan, :state, :street, :video_url, :view_phone, :website_url,
-                :zip
+                :zip, :claimed_status
   @@path = "/listings/v1/details"
   def self.path
     @@path
