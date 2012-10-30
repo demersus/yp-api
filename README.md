@@ -3,7 +3,7 @@ This is a wrapper around the US API for yellowpages.com. (not to be confused wit
 
 #Usage
 
-create an init file named yellowpages.rb in config/init and enter your YpAPI key here.
+create an init file named yellowpages.rb in config/initializers and enter your YpAPI key here.
 
 ````
 YpApi.key = 'YOUR KEY HERE'

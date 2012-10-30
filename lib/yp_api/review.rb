@@ -8,7 +8,7 @@ class YpApi::Review
   def self.find(id)
     res = YpApi::Connection.get(path,:format => :json,:listingid => id.to_s)
     data = JSON.parse(res)['ratingsAndReviewsResult']
-    return nil unless data && data["reviews"] 
+    return [] unless data && data["reviews"] && data["reviews"]["review"] 
     reviews = []
     data["reviews"]["review"].each do |review_json|  
       reviews <<  new(review_json)

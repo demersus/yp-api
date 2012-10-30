@@ -16,6 +16,19 @@ describe YpApi::Review do
         its(:count){should eql 5}
         its(:first){should be_a YpApi::Review}
       end      
-    end 
+    end
+    context "Given a valid listing_id(7602113) with no reviews" do
+      before do
+        @listing_id = 7602113
+        full_url = YpApi.base_url + YpApi::Review.path + "?" + URI.encode_www_form(:format => :json,:key => YpApi.key,:listingid=>@listing_id)
+        stub_request(:get,full_url).to_return(:body => file_fixture('review_none_7602113.json')) 
+      end
+      describe "The Result" do
+        subject{YpApi::Review.find(@listing_id)}
+        it {should be_a Array}
+        its(:count){should eql 0}
+      end    
+    end
+     
   end
 end
