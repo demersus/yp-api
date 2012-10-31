@@ -2,8 +2,6 @@ source :rubygems
 
 gemspec
 
-gem "rest-client"
-
 group :development,:test do
   gem "rdoc", "~> 3.12"
   gem "bundler"

@@ -3,6 +3,7 @@ PATH
   specs:
     yp-api (0.0.1)
       httparty
+      rest-client
 
 GEM
   remote: http://rubygems.org/
@@ -49,7 +50,6 @@ DEPENDENCIES
   jeweler (~> 1.8.3)
   rack
   rdoc (~> 3.12)
-  rest-client
   rspec (~> 2.8.0)
   webmock
   yp-api!

@@ -6,11 +6,11 @@ require 'yp_api/version'
 Gem::Specification.new do |s|
   s.name         = "yp-api"
   s.version      = YpApi::VERSION
-  s.authors      = ["Nik Petersen"]
+  s.authors      = ["Nik Petersen","poori"]
   s.email        = "demersus@gmail.com"
   s.homepage     = "https://github.com/demersus/yp-api"
   s.summary      = "A odm on top of the yp.com api"
-  s.description  = "A odm on top of the yp.com api"
+  s.description  = "This library gives simple ruby access to the US yellowpages api"
 
   s.files        = `git ls-files app lib`.split("\n")
   s.platform     = Gem::Platform::RUBY
@@ -18,4 +18,5 @@ Gem::Specification.new do |s|
   s.rubyforge_project = '[none]'
   
   s.add_dependency "httparty"
+  s.add_dependency "rest-client"
 end
