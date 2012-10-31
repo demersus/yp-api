@@ -17,5 +17,9 @@ YpApi::Listing.find(13519)
 To get reviews for a business
 
 ````
-YpApi::Review.find(13519)
+YpApi::Review.all_for_listing(13519)
 ````
+
+# Contributors
+- Demersus (Nik Petersen) - https://github.com/demersus
+- poori - https://github.com/poori
