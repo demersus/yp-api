@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'rspec'
 require 'yaml'
-require 'ruby-debug'
+#require 'ruby-debug'
 require 'webmock/rspec'
 require 'rack'
 require 'yp-api'
